@@ -1,0 +1,54 @@
+/// <binding BeforeBuild='Run - Development' />
+"use strict";
+
+var webpack = require('webpack');
+var path = require('path');
+
+module.exports = {
+    entry: "./TaggingUI/index.js",
+    output: {
+        filename: "./bundle.js"
+    },
+    devServer: {
+        contentBase: ".",
+        host: "localhost",
+        port: 9000
+    },
+    module: {
+    loaders: [
+      {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          include: path.join(__dirname, 'TaggingUI'), loaders: ['babel']
+      }
+    ]
+}
+};
+
+
+// Babelrc
+
+{
+  "presets": ["react", "es2015"],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  }
+}
+
+
+//routes
+
+import React from 'react';
+import {Route, IndexRoute} from 'react-router';
+import App from './components/App';
+import TagStreamsComponent from './components/TagStreamsComponent';
+
+export default(
+    <Route path="/" component={App}>
+        <IndexRoute component={TagStreamsComponent}/>
+        <Route path="tagStreams" component={TagStreamsComponent} />
+        <Route path="datalineage" component={TagStreamsComponent} />
+    </Route>
+);

@@ -1,0 +1,8 @@
+export const ADD_OBJ = 'ADD_OBJ';
+export const LOAD_OBJECTS_SUCCESS = 'LOAD_OBJECTS_SUCCESS';
+export const TAGS_LOADED_SUCESSFULLY = 'TAGS_LOADED_SUCESSFULLY';
+export const ADD_NEW_TAG = 'ADD_NEW_TAG';
+export const SAVE_ALL_TAGS = 'SAVE_ALL_TAGS';
+export const TAGS_SAVE_SUCCESS = 'TAGS_SAVE_SUCCESS'; 
+export const ADD_NEW_COLUMN = 'ADD_NEW_COLUMN';
+
