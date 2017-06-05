@@ -5,4 +5,4 @@ export const ADD_NEW_TAG = 'ADD_NEW_TAG';
 export const SAVE_ALL_TAGS = 'SAVE_ALL_TAGS';
 export const TAGS_SAVE_SUCCESS = 'TAGS_SAVE_SUCCESS'; 
 export const ADD_NEW_COLUMN = 'ADD_NEW_COLUMN';
-
+export const GET_RANDOM_REDDIT='GET_RANDOM_REDDIT';

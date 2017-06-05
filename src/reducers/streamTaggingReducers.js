@@ -9,7 +9,7 @@ export function newTagsAvailable(state=[], action )
             let tagGroups=[];
             action.tags.Tags.forEach(ex=>{
                 let index= tagGroups.findIndex(x=>x.Column == ex.Column);
-                if(index==-1)
+                if(index==-1)  
                 {
                     tagGroups.push({
                         Column: ex.Column,
