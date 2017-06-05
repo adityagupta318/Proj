@@ -32,7 +32,7 @@ class HomePage extends React.Component {
 function mapStateToProps(state)
 {
     return ({
-        data:state.stuff
+        data:state.stuff   // This is array having json objects inside.
     });
 }
 
